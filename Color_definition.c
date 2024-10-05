@@ -39,3 +39,12 @@ void testPairToNumber(enum MajorColor major, enum MinorColor minor, int expected
     printf("Got pair number %d\n", pairNumber);
     assert(pairNumber == expectedPairNumber);
 }
+
+void CodeReferenceManual(int numberOfMajorColors, int numberOfMinorColors){
+    int PairNumber = 1;
+    for(int MajorColorIterator = 0; MajorColorIterator < numberOfMajorColors; MajorColorIterator++){
+        for(int MinorColorIterator = 0; MinorColorIterator < numberOfMinorColors; MinorColorIterator++,PairNumber++){
+            printf("%-5d %-5s %-5s\n",PairNumber,MajorColorNames[majorColorIterator], MinorColorNames[minorColorIterator]);
+        }
+    } 
+}
