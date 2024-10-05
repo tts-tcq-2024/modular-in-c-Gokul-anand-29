@@ -42,9 +42,10 @@ void testPairToNumber(enum MajorColor major, enum MinorColor minor, int expected
 
 void CodeReferenceManual(int numberOfMajorColors, int numberOfMinorColors){
     int PairNumber = 1;
+    printf("COLOR REFERENCE MANUAL\n");
     for(int MajorColorIterator = 0; MajorColorIterator < numberOfMajorColors; MajorColorIterator++){
         for(int MinorColorIterator = 0; MinorColorIterator < numberOfMinorColors; MinorColorIterator++,PairNumber++){
-            printf("%-5d %-5s %-5s\n",PairNumber,MajorColorNames[MajorColorIterator], MinorColorNames[MinorColorIterator]);
+            printf("%-5d %-10s %-10s\n",PairNumber,MajorColorNames[MajorColorIterator], MinorColorNames[MinorColorIterator]);
         }
     } 
 }
