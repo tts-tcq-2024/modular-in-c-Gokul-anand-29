@@ -9,7 +9,7 @@ int main() {
     testPairToNumber(BLACK, ORANGE, 12);
     testPairToNumber(VIOLET, SLATE, 25);
 
-    CodeReferenceManual(numberOfMajorColors, numberOfMinorColors);
+    CodeReferenceManual(5, 5);
 
     return 0;
 }
